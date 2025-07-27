@@ -1,0 +1,28 @@
+{
+  "name": "galactic-spacefarer",
+  "version": "1.0.0",
+  "description": "Welcome to your new project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/cds": "^8.9.5",
+    "sqlite3": "^5.1.7"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": ["db", "srv"],
+        "credentials": {
+          "url": "db/my.sqlite"
+        }
+      }
+    }
+  }
+}
+
