@@ -4,7 +4,8 @@
   "description": "Welcome to your new project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-galactic-spacefarer-ui": "cds watch --open galactic-spacefarer-ui/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +18,18 @@
     "requires": {
       "db": {
         "kind": "sqlite",
-        "model": ["db", "srv"],
+        "model": [
+          "db",
+          "srv"
+        ],
         "credentials": {
           "url": "db/my.sqlite"
         }
       }
     }
-  }
+  },
+  "sapux": [
+    "app/galactic-spacefarer-ui",
+    "app/galactic-spacefarer-ui"
+  ]
 }
-
