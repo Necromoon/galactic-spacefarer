@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sap/cds": "^8.9.5",
+    "@sap/cds": "^8.9.6",
+    "@sap/cds-compiler": "^6.1.0",
     "sqlite3": "^5.1.7"
   },
   "cds": {
@@ -25,11 +26,13 @@
         "credentials": {
           "url": "db/my.sqlite"
         }
+      },
+      "auth": {
+        "kind": "mocked"
       }
     }
   },
   "sapux": [
-    "app/galactic-spacefarer-ui",
     "app/galactic-spacefarer-ui"
   ]
 }
